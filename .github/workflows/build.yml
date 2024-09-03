@@ -319,7 +319,7 @@ jobs:
           cmake ..
         continue-on-error: true
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
       - name: "Prepare package dir"
@@ -352,7 +352,7 @@ jobs:
         with:
           path: plugin/${{ env.PLUGIN_NAME }}
       - name: Download artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
       - name: "Package"
